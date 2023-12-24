@@ -5,7 +5,7 @@ def hitung_ongkos_kirim():
     riwayat = []                                                                            # menyimpan riwayat perhitungan dalam bentuk tabel
     
     while True:
-        os.system('cls' if os.name == 'nt' else 'clear')                                    # Membersihkan layar terminal
+        os.system("cls")                                                                    # Membersihkan layar terminal
         
         print(f"{'SELAMAT DATANG DI PROGRAM HITUNG ONGKOS KIRIM':^100}")
         print(f"{'PILIH TUJUAN DAN BERAT BARANG YANG INGIN ANDA KIRIM':^100}")
@@ -30,7 +30,7 @@ def hitung_ongkos_kirim():
         
         riwayat.append([tujuan, beban, jumlah_diskon, potongan, hasil])
         
-        os.system('cls' if os.name == 'nt' else 'clear')  
+        os.system("cls")  
         print(f"\n{'Riwayat Perhitungan':^55}")
         print(f"{'-'*55:^55}")
         print("{:<10} {:<10} {:<15} {:<10} {:<10}".format('Tujuan', 'Beban', 'Jumlah Diskon', 'Potongan', 'Hasil'))
