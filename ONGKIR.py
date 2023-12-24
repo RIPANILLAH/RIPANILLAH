@@ -2,7 +2,7 @@ import os
 
 def hitung_ongkos_kirim():
     ongkos = {'jawa': 9000, 'kalimantan': 10000, 'sumatra': 11000, 'sulawesi': 12000}
-    riwayat = []  # Menyimpan riwayat perhitungan dalam bentuk tabel
+    riwayat = []                                                                            # menyimpan riwayat perhitungan dalam bentuk tabel
     
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')                                    # Membersihkan layar terminal
@@ -37,7 +37,7 @@ def hitung_ongkos_kirim():
         for r in riwayat:
             print("{:<10} {:<10} {:<15} {:<10} {:<10}".format(r[0], r[1], r[2], r[3], r[4]))
         
-        lanjut = input("\nApakah anda ingin melakukan perhitungan lagi? (ya/tidak): ")      # looping
+        lanjut = input("\nApakah anda ingin melakukan perhitungan lagi? (ya/tidak): ")          # looping
         if lanjut.lower() != 'ya':
             break
 
